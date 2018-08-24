@@ -4,6 +4,10 @@
  *DESC: and several special routines are here.
  */
 
+/* GM */
+#include <errno.h>
+
+
 #ifndef CNTL
 #include "alice.h"
 #include "interp.h"
@@ -416,7 +420,7 @@ Tinyp((pointer)&sel_last),	/* 23 */
 (pointer)safe_reserve,		/* 24 */
 (pointer)&has_segments,		/* 25 */
 Tinyp((pointer)&cmd_preproc),	/* 26 */
-(pointer)&errno,	/* 27 */
+// GM (pointer)&errno,	/* 27 */
 (pointer)open_array,	/* 28 */
 #ifdef TURBO
 (pointer)&last_ioerr,	/* 29 */
